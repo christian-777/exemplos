@@ -1,0 +1,23 @@
+<!DOCTYPE  HTML>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <script>
+            function aciona_onblur(valor)
+            {
+                alert(valor);
+            }
+        </script>
+    </head>
+    <body>
+       <form name="f">
+           <input type="text" name="x" onblur="aciona_onblur(this.value)"/>
+           <select name="z" onblur="aciona_onblur(this.value)">
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+                <option>D</option>
+           </select>
+       </form>
+    </body>
+</html>

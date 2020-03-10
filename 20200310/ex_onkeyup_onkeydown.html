@@ -1,0 +1,21 @@
+<!DOCTYPE  HTML>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <script>
+            function aciona_tecla(valor)
+            {
+                document.getElementById("msg").innerHTML=valor;
+            }
+            
+        </script>
+    </head>
+    <body>
+        <div id="msg"></div>
+        <form name="f">
+                <input type="text" name="x" onkeyup="aciona_tecla(this.value)" placeholder="aciona ao sair da tecla"/>
+                <br />
+                <input type="text" name="y" onkeydown="aciona_tecla(this.value)" placeholder="aciona ao pressionar a tecla"/>
+            </form>
+    </body>
+</html>

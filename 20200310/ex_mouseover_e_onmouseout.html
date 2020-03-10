@@ -1,0 +1,44 @@
+<!DOCTYPE  HTML>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <script>
+            function aciona_mouse(valor)
+            {
+                document.getElementById("msg").innerHTML=valor;
+            }
+            
+        </script>
+    </head>
+    <body>
+        <div id="msg"></div>
+      <table onmouseover="aciona_mouse('entreina tabela');" onmouseout="aciona_mouse('sai da tabela');" border="1">
+        <tr>
+            <th>
+                titulo 1
+            </th>
+            <th>
+                titulo 2
+            </th>
+            <th>
+                titulo 3
+            </th>
+        </tr>
+        <tr>
+            <td>linha 1 coluna 1</td>
+            <td>linha 1 coluna 2</td>
+            <td>linha 1 coluna 3</td>
+        </tr>
+        <tr>
+            <td>linha 2 coluna 1</td>
+            <td>linha 2 coluna 2</td>
+            <td>linha 2 coluna 3</td>
+        </tr>
+        <tr>
+            <td>linha 3 coluna 1</td>
+            <td>linha 3 coluna 2</td>
+            <td>linha 3 coluna 3</td>
+        </tr>
+      </table>
+    </body>
+</html>
